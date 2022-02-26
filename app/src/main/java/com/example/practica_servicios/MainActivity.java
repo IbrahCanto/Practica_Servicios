@@ -8,6 +8,7 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -15,7 +16,7 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     EditText ediURL, ediPhone, ediSMSPhone, ediSMS;
-    Button btnlink, btnLlamar, btnSMS;
+    Button btnlink, btnLlamar, btnSMS, salir;
 
 
 
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
         btnSMS = (Button) findViewById(R.id.btnSMS);
         ediSMSPhone = (EditText) findViewById(R.id.ediSMSPhone);
         ediSMS = (EditText) findViewById(R.id.ediSMS);
+
+        salir = (Button) findViewById(R.id.btncancelar);
 
 
         btnlink.setOnClickListener(new View.OnClickListener() {
@@ -62,6 +65,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        salir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                //Bloque que se ejecuta
+                Toast.makeText(getApplicationContext(), "By Ibrahin Canto Almeida\n" + "Curso de Titulación Lic. en Informatica", Toast.LENGTH_LONG).show();
+                Log.i("ERROR1", "Diste click en salir");
+                finish();
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
+            }
+        });
+
 
     }
 }
