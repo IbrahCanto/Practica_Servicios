@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <EditText
+            android:id="@+id/ediURL"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btnlink"
+            android:text="Buscar"
+            android:layout_marginTop="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+        <EditText
+            android:id="@+id/ediPhone"
+            android:inputType="phone"
+            android:layout_marginTop="200dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/btnLlamar"
+            android:layout_gravity="center_horizontal"
+            android:text="Llamar"
+            android:layout_marginTop="280dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/ediSMSPhone"
+        android:layout_marginTop="500dp"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/ediSMS"
+        android:layout_marginTop="550dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnSMS"
+        android:layout_gravity="center_horizontal"
+        android:text="Enviar"
+        android:layout_marginTop="600dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+
+
+
+        <Button
+            android:id="@+id/btncancelar"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="650dp"
+            android:layout_marginLeft="140dp"
+            android:text="Salir" />
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
